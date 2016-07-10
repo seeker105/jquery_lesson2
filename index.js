@@ -54,6 +54,8 @@ $("td").on('click', function(){
 
 $(":checkbox(:checked)").on('click', function(){
   var pres = $(this).parent().siblings('.name').text();
+  //don't forget the parens '()' on a function call, even if there are
+  //no parameters
   $('body').append('<div>' + pres + '</div>');
 })
 
